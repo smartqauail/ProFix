@@ -1,0 +1,687 @@
+{% load wagtailcore_tags wagtailimages_tags widget_tweaks%}
+{% load bootstrap4 %}
+{% load static %}
+{# CSS Bootstrap #}
+{% bootstrap_css %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        {% block title %}
+        {{ page.title }}
+        
+        <div class="intro">{{ pageS.intro|richtext }}</div>
+        {% for post in page.get_children %}
+        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+        {{ post.specific.intro }}
+        {{ post.specific.body|richtext }}
+    {% endfor %}
+    {%endblock%}
+</title>
+
+<!-- Fuentes y estilos-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {%block extrastyle%}
+	<style>
+	 .nav-link span:before {
+	  background: #e00;;
+	}
+	.search-wrap h3 {
+		font-weight: 700;
+		color: #e00;
+	} 
+  .btn.btn-primary {
+    background: #e00;
+    border: 1px solid #e00 !important;
+    color: #fff !important;
+}
+.bg-primary {
+    background: #e00!important;
+}
+.ftco-footer {
+    font-size: 16px;
+    background: #f7f7f7;
+    padding: 7em 0;
+    z-index: 0;
+    position: relative;
+}
+.ftco-footer p {
+    color: rgba(134, 17, 17, 0.7);
+}
+
+.ftco-footer .ftco-footer-widget ul li a {
+    color: rgba(0, 0, 0, 0.6);
+    color: #090909;
+}
+.ftco-footer .ftco-footer-widget ul li a span {
+    color: rgba(255, 255, 255, 0.6);
+    color: #e00;
+}
+.ftco-footer-social li a {
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: #e00;
+    border-radius: 50%;
+    position: relative;
+}
+
+p {
+    margin-top: 0.2;
+    margin-bottom: 0.001rem;
+}
+
+.ftco-footer {
+    font-size: 15px;
+}
+.ftco-footer a {
+    color: rgba(0, 0, 0, 0.7);
+    color: #e00;
+}
+
+.ftco-footer .ftco-footer-widget ul li a {
+    color: rgba(0, 0, 0, 0.6);
+    color: #e00;
+}
+
+.ftco-properties .owl-dots .owl-dot.active {
+    background: #e00;
+}
+
+.testimony-section {
+
+position: relative;
+background: #e00;
+overflow: hidden;
+}
+
+.ftco-intro {
+
+background: #e00;
+}
+.ftco-agent .owl-dots .owl-dot.active {
+    background: #e00;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #747474;
+}
+
+elemento {
+}
+.testimony-wrap .user-img .quote {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #5f6061;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.ftco-services-2 .services .icon {
+
+line-height: 1.3;
+position: relative;
+margin-bottom: 20px;
+width: 100px;
+height: 100px;
+margin: 0 auto;
+    margin-bottom: 0px;
+z-index: 1;
+margin-bottom: 20px;
+background: #e00;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+border-radius: 50%;
+
+}
+
+.contact-section .contact-info p a {
+    color: #e00;
+}
+.contact-section .box .icon span {
+    color: #e00;
+}
+.btn.btn-secondary {
+    background: #e00 !important;
+    border: 1px solid #e00 !important;
+    color: #fff !important;
+}
+
+.heading-section .subheading {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    color: #e00;
+    letter-spacing: 2px;
+}
+
+.btn.btn-white {
+    background: #fff !important;
+    border: 1px solid #f60707 !important;
+    color: #000000 !important;
+}
+
+.ftco-services-2 .services .icon {
+    line-height: 1.3;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    z-index: 1;
+    margin-bottom: 20px;
+    background: #e00;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.bg-secundary {
+    background: #000!important;
+}
+
+.bg-primary {
+    background: #fe027c!important;
+}
+
+.bg-None {
+    background: rgb(255, 255, 255)!important;
+}
+
+
+.properties .text {
+    position: absolute;
+    top: 215px;
+    left: 15px;
+    right: 0;
+    opacity: 1;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #000000;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #4b69bd1a;
+    outline: none !important;
+}
+  </style>
+
+{%endblock%}
+
+
+
+
+
+
+  </head>
+
+<!-- Barra de ingreso a ProFix-Systems--> 
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+{%for item in page.galleria2.all %}
+{% image item.image scale-100 as bg %}
+{% image item.image2 scale-100 as img %}
+{% image item.image3 scale-100 as img2 %}
+{% image item.image4 scale-100 as img3 %}
+{% image item.image5 scale-100 as img4 %}
+{% image item.image6 scale-100 as img5 %}
+{% image item.image7 scale-100 as img6 %}
+{% image item.image8 scale-100 as img7 %}
+{% image item.image9 scale-100 as img8 %}
+
+{% image item.image2 scale-100 as img_1 %}
+{% image item.image3 scale-100 as img_2 %}
+{% image item.image4 scale-100 as img_3 %}
+{% image item.image5 scale-100 as img_4 %}
+{% image item.image6 scale-100 as img_5 %}
+{% image item.image7 scale-100 as img_6 %}
+{% image item.image8 scale-100 as img_7 %}
+{% image item.image9 scale-100 as img_8 %}
+
+
+
+    
+    <div class="py-1 bg-black top">
+      <div class="container">
+          <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+              <div class="col-lg-12 d-block">
+                  <div class="row d-flex">
+                      <div class="col-md pr-4 d-flex topper align-items-center">
+                          <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                          <span class="text">+ (593) 999 2835 43</span>
+                      </div>
+                      <div class="col-md pr-4 d-flex topper align-items-center">
+                          <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                          <span class="text">profixinfo@profixgroup.com</span>
+                      </div>
+                      <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+                          <p class="mb-0 register-link"><a href="#" class="mr-3"></a><a href="#">Ingresar</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </div>
+
+  <!-- Barra de navegacion--> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">
+            <img src="{% static 'LogoF.png' %}" height="35px" />
+        </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Inicio</span></a></li>
+            <li class="nav-item"><a href="#profolio" class="nav-link"><span>Sistemas de emergencia</span></a></li>
+            <li class="nav-item"><a href="#properties-section" class="nav-link"><span>Cotizar</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Barrner de servicios--> 
+
+      
+	  
+	  <section class="hero-wrap hero-wrap-2" style="background-image: url('{{bg.url}}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+
+        <div class="row no-gutters slider-text align-items-end justify-content-start">
+          <div class="col-md-9 ftco-animate pb-4 ">
+            <div class="col-md.b  d-flex align-self-stretch ftco-animate ftco-services-2 ">
+              <div class="mb-3 bread media block-6 services text-center d-block mt-lg-5 pt-10">
+                <div class="icon justify-content-center align-items-center d-flex"> <span  class="flaticon-{{page.icon}}"></span> </div><h1>{{page.intro |richtext}}</h1>
+              </div>
+            </div> 
+            <h6 class="mb-5 bread">{{ page.sub_intro|richtext }}</h6>
+             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio <i class="ion-ios-arrow-forward"></i></a></span> {{page.back}} <span><i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+  
+        </div>
+       
+      </div>        
+   </section>
+   
+
+
+  
+<!-- Formulario de cotizacion -->
+  <section class="ftco-section ftco-properties" id="properties-section">
+    <div class="container-fluid px-md-5">
+      <div class="row">
+
+        <div class="col-lg-3 pr-lg-4">
+          <div class="search-wrap">
+            <h3 class="mb-5">Cotiza tu {{page.intro|richtext}}</h3>
+
+            <form acction= "{% pageurl page %}"method="post" novalidate>
+              {% csrf_token %}
+              {% if form.nom_field_errors %}
+              <div class="alert alert-danger" role="alert">
+                {% for error in form.nom_field_errors%}
+                {{error}}
+                {% endfor %}
+              </div>
+              {% endif %}
+
+              <div class="row">
+                <div class="col-md-12 align-items-end ftco-animate">
+                  <div class="form-group">
+                    {% for field in form.visible_fields %}
+                    <label for="#"> <th> {{ field.label_tag }}</th> </label>
+                    {% render_field field class+="form-control" %} 
+                    {% endfor %}
+                  </div> 
+                </div>
+                <div class="col-md-12 align-self-end ftco-animate">
+                  <div class="form-group">
+                    <div class="form-field">
+                      <button type="submit" class="btn btn-primary"> Cotizar </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+       
+<!-- Informacion general de servicios  -->
+       <div class="col-lg-9">
+          <div class="row">
+            <div class="col-md-6 col-lg-10">
+              <h2 class="mb-3">{{page.introe |richtext}}</h2>
+              <p>{{ page.sub_introe|richtext }}</p>
+        </div> <!-- .col-md-8 -->
+    
+
+  <!-- indice de servicios  -->
+
+  <section id="portfolio">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_1.url}}">
+        <img class="img-fluid" src="{{img.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_2.url}}">
+        <img class="img-fluid" src="{{img2.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item2}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo2}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta2}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_3.url}}">
+        <img class="img-fluid" src="{{img3.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item3}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo3}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta3}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_4.url}}">
+        <img class="img-fluid" src="{{img4.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item4}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo4}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta4}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_5.url}}">
+        <img class="img-fluid" src="{{img5.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item5}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo5}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta5}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a class="portfolio-box properties ftco-animate" href="{{img_6.url}}">
+        <img class="img-fluid" src="{{img6.url}}" alt="Colorlib Template">
+              <div class="portfolio-box-caption   ">
+                <div class="project-category"><h6>{{page.item6}}</h6></div>
+                <div class="project-name">Certificado por : </div>
+                <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+              
+        <div class="text bg-{{page.promo6}} d-flex text-center align-items-center justify-content-center">
+                <span>{{page.oferta6}}</span>
+        </div> 
+      </div> </a>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Seguridad-->
+
+
+  <div class="col-lg-9">
+    <div class="row">
+      <div class="col-md-6 col-lg-10">
+        <h2 class="mb-3">{{page.introseg |richtext}}</h2>
+        <p>{{ page.sub_introseg|richtext }}</p>
+  </div> <!-- .col-md-8 -->
+
+
+<!-- indice de Seguridad  -->
+
+<section id="portfolio">
+<div class="row">
+<div class="col-md-6 col-lg-4">
+<a class="portfolio-box properties ftco-animate" href="{{img_7.url}}">
+  <img class="img-fluid" src="{{img7.url}}" alt="Colorlib Template">
+        <div class="portfolio-box-caption   ">
+          <div class="project-category"><h6>{{page.item7}}</h6></div>
+          <div class="project-name">Certificado por : </div>
+          <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+        
+  <div class="text bg-{{page.promo7}} d-flex text-center align-items-center justify-content-center">
+          <span>{{page.oferta7}}</span>
+  </div> 
+</div> </a>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<a class="portfolio-box properties ftco-animate" href="{{img_8.url}}">
+  <img class="img-fluid" src="{{img8.url}}" alt="Colorlib Template">
+        <div class="portfolio-box-caption   ">
+          <div class="project-category"><h6>{{page.item8}}</h6></div>
+          <div class="project-name">Certificado por : </div>
+          <div class="project-name">  {{page.certi}} <span class="details">&mdash; {{page.city}}</span></div> 
+        
+  <div class="text bg-{{page.promo8}} d-flex text-center align-items-center justify-content-center">
+          <span>{{page.oferta8}}</span>
+  </div> 
+</div> </a>
+</div>
+
+
+
+
+<!-- Seguridad-->
+
+</div> 
+</div> 
+
+
+</div> 
+</div>          
+</div> 
+</div>    
+
+<div class="sidebar-box ftco-animate">
+  <h3 class="heading-sidebar">Condiciones</h3>
+  <p>{{page.term| richtext}}</p>
+</div>
+</div>
+
+</div>
+</div>
+    
+ </section>
+
+ {%endfor%}
+    
+ <!-- Fin de Galeria de servicios -->
+ <!-- Terminos -->
+
+
+        <!-- Pie de Pagina -->
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container-fluid px-md-5">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"> <img src="{% static 'LogoF.png' %}" height="65px" /></h2>
+              <p>ProFesionales en Mantenimiento preventivos y correctivos en sistemas estructurales.</p>
+              <p>Siguenos en nuestras redes y conoce nustras promociones. </p>
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Comunidad ProFix</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cotiza</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ProFix-Crew</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Servicios</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Consultas</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">ProFix</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Estamos trabajando</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Como Funciona</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ProFix-jobs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">ProFix-Group</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ProFix-GROUP</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Noticias</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Consultas</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>ProFix-jobs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Consultas</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Edificio Genesis, Granda Centeno, Quito, Ecuador</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+593 999 23835 43</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">profixinfo@profixgroup.net</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+	
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados y de propiedad intelectual pertencen a:</p>
+            <p>PROFIX-SYSTEMS</p>
+            <p> Quito-Ecuador</p>
+            <p>  <a href="https://colorlib.com" target="_blank">IO-LINK-DESIGN</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/scripts.min.js'}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="{% static 'js/google-map.js' %}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+  {% bootstrap_javascript jquery='full' %}
+
+    
+  </body>
+</html>

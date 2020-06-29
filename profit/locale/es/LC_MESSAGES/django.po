@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-17 10:09-0500\n"
+"PO-Revision-Date: 2020-06-16 11:28-0519\n"
+"Last-Translator: b'  <profixmainhousing@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.4\n"
+
+#: profit/models.py:23
+#, fuzzy
+#| msgid "Building RUC"
+msgid "Building Code"
+msgstr "RUC-Edificio"
+
+#: profit/models.py:24
+#, fuzzy
+#| msgid "Building RUC"
+msgid "Building ID"
+msgstr "RUC-Edificio"
+
+#: profit/models.py:25
+msgid "image"
+msgstr ""
+
+#: profit/models.py:26
+msgid "Building name"
+msgstr "Nombre de Edificio"
+
+#: profit/models.py:27
+msgid "city"
+msgstr "Ciudad"
+
+#: profit/models.py:28
+msgid "building_levels"
+msgstr ""
+
+#: profit/models.py:29
+msgid "Building address"
+msgstr "Dirección"
+
+#: profit/models.py:31
+msgid "Building Accountant "
+msgstr "Contador de Edificio"
+
+#: profit/models.py:32
+msgid "Building insurance carrier "
+msgstr "Aseguradora"
+
+#: profit/models.py:33
+msgid "administration manager name"
+msgstr "Empresa administradora"
+
+#: profit/models.py:34
+msgid "Manager administrator name"
+msgstr "Nombre de administrador"
+
+#: profit/models.py:35
+msgid "administrator e-mail"
+msgstr "Correo electrónico"
+
+#: profit/models.py:36
+msgid "administrator phonenumber"
+msgstr "Contacto de Administrador"
+
+#: profit/models.py:38
+msgid "codigo"
+msgstr "Código"
+
+#~ msgid "first name"
+#~ msgstr "nombre"
+
+#~ msgid "last name"
+#~ msgstr "apellidos"
+
+#~ msgid "e-mail"
+#~ msgstr "Correo Electrónico"
+
+#~ msgid "postal code"
+#~ msgstr "código postal"
+
+#~ msgid "Checkout"
+#~ msgstr "Compra"
+
+#~ msgid "Your order"
+#~ msgstr "Tu compra"
+
+#~ msgid ""
+#~ "\n"
+#~ "            \"%(code)s\" (%(discount)s%% off)\n"
+#~ "          "
+#~ msgstr ""
+#~ "\n"
+#~ "            \"%(code)s\" (%(discount)s%% descuento)\n"
+#~ "          "
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgid "Place order"
+#~ msgstr "Realizar compra"
+
+#~ msgid "Thank you"
+#~ msgstr "Gracias"
+
+#~ msgid ""
+#~ "\n"
+#~ "    <p>Your order has been successfully completed. Your order number is "
+#~ "<strong>%(order_id)s</strong>.</p>\n"
+#~ "  "
+#~ msgstr ""
+#~ "\n"
+#~ "    <p>Tu pedido se ha completado correctamente. El número de tu pedido "
+#~ "es <strong>%(order_id)s</strong>.</p>\n"
+#~ "  "
