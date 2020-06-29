@@ -48,8 +48,8 @@ LOGOUT_URL='logout'
 INSTALLED_APPS = [
     
     'baton',
-    'djmoney',
-    'account',
+    #'djmoney',
+    #'account',
     'django.contrib.admin',
     'django_humanize',
     'django.contrib.auth',
@@ -901,7 +901,7 @@ WSGI_APPLICATION = 'ProFix.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ProFixDB',
+        'NAME': 'profixdb',
         'USER': 'profixadmin',
         'PASSWORD': '95355672',
         'HOST':'profix-1702.postgres.pythonanywhere-services.com',
