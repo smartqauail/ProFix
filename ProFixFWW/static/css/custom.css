@@ -1,0 +1,146 @@
+
+summary {
+    background-color: #a32922;
+    margin-bottom: 2em;
+    padding-top: 2em;
+}
+header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #000000;
+    margin-bottom: 2em;
+}
+
+.nav-wrapper .inner {
+    background: #222;
+}
+
+.content-wrapper {
+    background-color: #a32921;
+    color: #050505;
+}
+
+.content {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    background: #a32921;
+        background-color: rgb(163, 41, 33);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: none;
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    border-top: 0 solid #fafafa;
+    min-height: 100%;
+    padding-bottom: 4em;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    
+}
+
+.page-explorer .listing .index {
+    color: #fff;
+    background-color: #a32922;
+}
+.breadcrumb {
+    padding-top: 0;
+    background: #010101;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.listing {
+    color: #bdbdbd;
+    font-size: .95em;
+}
+
+.listing.full-width + .pagination {
+
+    margin-top: 3em;
+    border-top: 1px dashed #8d8d8d;
+    padding: 2em 50px 0;
+
+}
+
+.listing.full-width th {
+    background-color: #4b4949;
+}
+
+.listing thead {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.icon.teal {
+    color: #a2a2a2;
+}
+
+.halloeditor, .tagit, input, select, textarea {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    font-family: Open Sans,Arial,sans-serif;
+    border: 1px solid #e6e6e6;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+    padding: .9em 1.2em;
+    background-color: #c1bdbd;
+    color: #333131;
+    font-size: 1.2em;
+    font-weight: 300;
+
+}
+
+.help {
+    color: #fff;
+}
+
+.tab-nav.merged {
+    background-color: #a32921;
+}
+
+.breadcrumb li a:after, .breadcrumb li span:after {
+    color: #a32922;
+}
+
+.messages .success {
+    background-color: #7b1515;
+}
+
+.button {
+    border-radius: 3px;
+    font-family: Open Sans,Arial,sans-serif;
+    width: auto;
+    height: 2.4em;
+    padding: 0 1em;
+    font-size: .9em;
+    font-weight: 400;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #000;
+    border: 1px solid #030303;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-font-smoothing: auto;
+    -moz-appearance: none;
+}

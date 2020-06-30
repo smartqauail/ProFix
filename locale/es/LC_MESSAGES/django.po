@@ -1,0 +1,360 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-17 10:09-0500\n"
+"PO-Revision-Date: 2020-06-17 11:48-0519\n"
+"Last-Translator: b'  <profixmainhousing@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.4\n"
+
+#: ProFix/settings.py:658
+msgid "English"
+msgstr "Inglés"
+
+#: ProFix/settings.py:659
+msgid "Spanish"
+msgstr "Español"
+
+#: ProFix/urls.py:21
+msgid "profixadmin/"
+msgstr ""
+
+#: ProFix/urls.py:22
+msgid "account/"
+msgstr ""
+
+#: ProFix/urls.py:23
+msgid "baton/"
+msgstr ""
+
+#: ProFix/urls.py:24
+msgid "noticias/"
+msgstr ""
+
+#: ProFix/urls.py:25
+msgid "sitemap.xml"
+msgstr ""
+
+#: ProFix/urls.py:27
+msgid "social-auth/"
+msgstr ""
+
+#: ProFix/urls.py:28
+msgid "images/"
+msgstr ""
+
+#: ProFix/urls.py:29
+msgid "cart/"
+msgstr ""
+
+#: ProFix/urls.py:30
+msgid "orders/"
+msgstr ""
+
+#: ProFix/urls.py:31
+msgid "payment/"
+msgstr ""
+
+#: ProFix/urls.py:32
+msgid "rosetta/"
+msgstr ""
+
+#: ProFix/urls.py:33
+#, fuzzy
+#| msgid "My shop"
+msgid "shop/"
+msgstr "Mi tienda"
+
+#: ProFixFWW/templates/base_site.html:6 templates/base_site.html:6
+msgid "ProFix-Systems"
+msgstr ""
+
+#: ProFixFWW/templates/index.html:215
+msgid "ProFix"
+msgstr ""
+
+#: ProFixFWW/templates/index.html:220 shop/templates/shop/base.html:17
+msgid "Language"
+msgstr ""
+
+#: ProMain/models.py:15
+#, fuzzy
+#| msgid "Invoice date"
+msgid "Invoice Type"
+msgstr "Fecha de Cotización"
+
+#: ProMain/models.py:16
+#, fuzzy
+#| msgid "Invoice"
+msgid "Invoice ID"
+msgstr "Cotización"
+
+#: ProMain/models.py:17 orders/models.py:13 projects/models.py:18
+#, fuzzy
+#| msgid "Project Info"
+msgid "Project Name"
+msgstr "Proyecto Info"
+
+#: ProMain/models.py:18 projects/models.py:19
+msgid "Subject"
+msgstr "Descripción"
+
+#: ProMain/models.py:19 projects/models.py:20
+msgid "codigo"
+msgstr "Codigo"
+
+#: cart/forms.py:12
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: coupons/forms.py:6
+msgid "Coupon"
+msgstr "Cupón"
+
+#: orders/models.py:11
+msgid "first name"
+msgstr "Primer Nombre"
+
+#: orders/models.py:12
+msgid "last name"
+msgstr "Apellido"
+
+#: orders/models.py:14
+msgid "e-mail"
+msgstr "Correo"
+
+#: orders/models.py:15 profixinvoice/templates.py:119
+#, fuzzy
+#| msgid "Building address"
+msgid "address"
+msgstr "Dirección "
+
+#: orders/models.py:16 profixinvoice/templates.py:119
+#: profixinvoice/templates.py:137
+msgid "Building"
+msgstr "Edificio"
+
+#: orders/models.py:17 profixinvoice/templates.py:119
+#: profixinvoice/templates.py:137
+msgid "city"
+msgstr "Ciudad"
+
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
+msgid "Checkout"
+msgstr "Pagar"
+
+#: orders/templates/orders/order/create.html:12
+#, fuzzy
+msgid "Your order"
+msgstr "Tu carro"
+
+#: orders/templates/orders/order/create.html:22
+#, python-format
+msgid ""
+"\n"
+"            \"%(code)s\" (%(discount)s%% off)\n"
+"          "
+msgstr ""
+
+#: orders/templates/orders/order/create.html:29
+msgid "Total"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:34
+msgid "Place order"
+msgstr ""
+
+#: orders/templates/orders/order/created.html:5
+#: orders/templates/orders/order/created.html:9
+msgid "Thank you"
+msgstr "Gracias"
+
+#: orders/templates/orders/order/created.html:10
+#, python-format
+msgid ""
+"\n"
+"    <p>Your order has been successfully completed. Your order number is <strong>%(order_id)s</strong>.</p>\n"
+"  "
+msgstr ""
+
+#: payment/urls.py:9
+msgid "process/"
+msgstr ""
+
+#: payment/urls.py:10
+msgid "done/"
+msgstr ""
+
+#: payment/urls.py:11
+msgid "canceled/"
+msgstr ""
+
+#: profixinvoice/templates.py:103
+msgid "Invoice id"
+msgstr "Número de Cotización"
+
+#: profixinvoice/templates.py:103
+msgid "Invoice date"
+msgstr "Fecha de Cotización"
+
+#: profixinvoice/templates.py:104
+msgid "Invoice due date"
+msgstr "Fecha de Pago"
+
+#: profixinvoice/templates.py:114
+msgid "Invoice"
+msgstr "Cotización"
+
+#: profixinvoice/templates.py:119 profixinvoice/templates.py:137
+#: profixinvoice/templates.py:217
+msgid "Name"
+msgstr "Nombre"
+
+#: profixinvoice/templates.py:120
+msgid "country"
+msgstr "País"
+
+#: profixinvoice/templates.py:120 profixinvoice/templates.py:138
+msgid "Departament"
+msgstr "Departamento"
+
+#: profixinvoice/templates.py:120
+msgid "Phone"
+msgstr "Teléfono"
+
+#: profixinvoice/templates.py:120
+msgid "email"
+msgstr "Correo"
+
+#: profixinvoice/templates.py:137
+msgid "Provider"
+msgstr "Proveedor"
+
+#: profixinvoice/templates.py:153
+msgid "Client Info"
+msgstr "Cliente Info"
+
+#: profixinvoice/templates.py:155
+msgid "Project Info"
+msgstr "Proyecto Info"
+
+#: profixinvoice/templates.py:214
+msgid "Detail"
+msgstr "Detalle"
+
+#: profixinvoice/templates.py:217
+msgid "Description"
+msgstr "Descripción"
+
+#: profixinvoice/templates.py:217
+msgid "Units"
+msgstr "Cantidad"
+
+#: profixinvoice/templates.py:217
+msgid "Unit Price"
+msgstr "Precio Unitario"
+
+#: profixinvoice/templates.py:217
+msgid "Amount"
+msgstr "Valor"
+
+#: projects/models.py:16
+#, fuzzy
+#| msgid "Project Info"
+msgid "Project Code"
+msgstr "Proyecto Info"
+
+#: projects/models.py:17
+#, fuzzy
+#| msgid "Project Info"
+msgid "Project ID"
+msgstr "Proyecto Info"
+
+#: shop/templates/shop/base.html:7 shop/templates/shop/base.html:12
+#, fuzzy
+msgid "My shop"
+msgstr "Mi tienda"
+
+#: shop/templates/shop/base.html:33
+#, fuzzy
+msgid "Your cart"
+msgstr "Tu carro"
+
+#: shop/templates/shop/base.html:35
+#, fuzzy, python-format
+msgid ""
+"\n"
+"                %(total_items)s item%(total_items_plural)s,\n"
+"                $%(total_price)s\n"
+"              "
+msgstr ""
+"\n"
+"                %(total_items)s producto%(total_items_plural)s,\n"
+"                $%(total_price)s\n"
+"              "
+
+#: shop/templates/shop/base.html:41
+#, fuzzy
+msgid "Your cart is empty."
+msgstr "Tu carro está vacío."
+
+#: shop/templates/shop/product/detail.html:18
+#, fuzzy
+msgid "Add to cart"
+msgstr "Añadir al carro"
+
+#: shop/templates/shop/product/detail.html:23
+msgid "People who bought this also bought"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:6
+#: shop/templates/shop/product/list.html:24
+#, fuzzy
+msgid "Products"
+msgstr "Productos"
+
+#: shop/templates/shop/product/list.html:11
+#, fuzzy
+msgid "Categories"
+msgstr "Categorías"
+
+#: shop/templates/shop/product/list.html:14
+#, fuzzy
+msgid "All"
+msgstr "Todos"
+
+#~ msgid "Building name"
+#~ msgstr "Nombre de Edificio"
+
+#~ msgid "Building Accountant "
+#~ msgstr "Contador"
+
+#~ msgid "Building insurance carrier "
+#~ msgstr "Aseguradora"
+
+#~ msgid "administration manager name"
+#~ msgstr "Empresa Administradora"
+
+#~ msgid "Manager administrator name"
+#~ msgstr "Administrador"
+
+#, fuzzy
+#~ msgid "administrator e-mail"
+#~ msgstr "Correo electrónico"
+
+#, fuzzy
+#~ msgid "coupons/"
+#~ msgstr "Cupón"
